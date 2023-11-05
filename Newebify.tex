@@ -1,0 +1,284 @@
+\documentclass[12pt,a4paper]{article}
+
+%packages used
+\usepackage[english]{babel}
+\usepackage[margin=1in,  left=1.25in]{geometry} %margins
+\usepackage{pslatex}%Times new roman font
+\usepackage{graphicx}%for images
+\usepackage{float}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyfoot{}
+
+%beginning of document
+\begin{document}
+%declaration page
+%\thispagestyle{empty}
+\pagenumbering{roman} 
+\section*{\huge DECLARATION}
+\addcontentsline{toc}{section}{\numberline{}Declaration}
+
+It is hereby declared that the project work entitled "Newebify Blockchain" submitted to Kalinga Institute of Industrial Technology (KIIT), Bhubaneswar, is a record of bonafide work carried out by Waibhav Jha under the guidance of \textbf{Prof. Bindu Agarwalla}, Department of Computer Science and Engineering, KIIT, Bhubaneswar. This project work is submitted in the partial fulfilment of the requirements of the degree of BACHELOR OF TECHNOLOGY in Computer Science and Engineering of KIIT University, Bhubaneswar during the year 2023.\\
+\\
+\textsc{\large Waibhav Jha\\21052209}
+
+\newpage
+%abstract page
+\linespread{1.6}
+\section*{\huge ABSTRACT}
+\addcontentsline{toc}{section}{\numberline{}Abstract}
+
+Newebify Blockchain is a platform that will serve as a public space on the internet where visitors can send a friendly greeting along with a message. The unique feature of this platform is that all data will be securely stored on the blockchain using an Ethereum smart contract. In essence, a smart contract is a set of self-executing code deployed on the blockchain, enabling both reading and writing operations.
+\cite{blockchain}\\
+
+The main objective of the project is to provide an elegant and intuitive user interface for users to connect their wallets and interact with the smart contract. This project combines web development with blockchain technology for an engaging and secure user experience making it an enriching experience for users to help facilitate the learning of Blockchain.\\
+
+This project is a fully functional decentralized application that is built using tools like Solidity, Hardhat, React, CSS, JavaScript.\\
+
+Blockchain is a transformative technology revolutionizing the way we manage and secure data. At its core, it's a decentralized ledger system that records transactions across a network of computers. Each transaction is grouped into a block, and these blocks are linked together using cryptographic hashes, forming an immutable chain. This distributed nature ensures transparency and security, as altering one block would require consensus across the entire network, making it highly resistant to fraud.\cite{blockchain}\\
+
+Solidity is a high-level programming language specifically designed for writing smart contracts on the Ethereum blockchain. It provides the foundation for creating self-executing contracts that automatically perform actions when certain conditions are met. Solidity is known for its syntax similarity to JavaScript, making it accessible for developers familiar with web development. It also incorporates security features to prevent vulnerabilities in smart contracts, ensuring robust and reliable blockchain applications.\\
+
+Hardhat is a powerful development environment for building, testing, and deploying smart contracts on the Ethereum blockchain. It streamlines the process of writing and deploying smart contracts by providing a comprehensive suite of tools and plugins. It also integrates seamlessly with popular Ethereum development frameworks and testing libraries, making it a go-to choice for Ethereum development projects. With features like built-in support for TypeScript and Ethereum mainnet forking, Hardhat is a versatile tool that accelerates the smart contract development process.\cite{hardhat}\\
+
+React is an open-source JavaScript library used for building user interfaces, particularly for single-page applications where user experience is crucial. React allows developers to create reusable UI components that update in real-time as data changes. Its virtual DOM (Document Object Model) system optimizes rendering performance, enhancing the responsiveness of web applications.\cite{react}
+
+
+
+\newpage
+%acknowledgements page
+\section*{\huge ACKNOWLEDGEMENTS}
+\addcontentsline{toc}{section}{\numberline{}Abstract}
+
+I am profoundly grateful to \textbf{Prof. Bindu Agarwalla} for her expert guidance
+and continuous encouragement throughout to see that this project rights its
+target since its commencement to its completion.\\
+
+I would also like to express my deepest appreciation towards \textbf{Dr. Tanmaya Mohanty},
+Principal, KIIT, Bhubaneswar and \textbf{Prof. Biswajit Sahoo}, 
+Head of Department, Computer Science and Engineering for their ongoing support and encouragement.\\
+
+Lastly, yet most importantly i would like to express my gratitude toward my family and friends, without whose support this project would have been impossible to complete.
+
+\begin{flushright}
+{
+Waibhav Jha
+}
+\end{flushright}
+
+
+\newpage
+%table of contents
+\tableofcontents
+\thispagestyle{empty}
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{Introduction}
+\subsection{Problem Statement}
+Develop a decentralized application which revolutionize online interactions. It's a platform where visitors can send messages. All data is safeguarded on the blockchain through an Ethereum smart contract. Imagine it as a digital vault with self-operating security protocols. Even if you're not tech-savvy, this project offers a golden opportunity to explore the world of blockchain. It's a user-friendly, secure, and innovative user interface that welcomes anyone intrigued by the potential of this cutting-edge technology.
+
+\subsection{Objectives of the Project Work}
+The main objective of the Newebify Blockchain project is to establish an open digital space on the internet, and to provide an elegant and intuitive user interface, making it an enriching experience for users to send messages. The project's standout feature lies in its robust security protocol, ensuring that all information is stored on the blockchain through an Ethereum smart contract and also to help facilitate the learning of Blockchain, all on the cloud.\cite{cloud}
+
+This application operates entirely on the server and doesn't necessitate any extra local software installation. Additionally, it seamlessly integrates with Metamask for enhanced functionality and can also be used with a wide range of modern web browsers, including Google Chrome, Apple Safari, Mozilla Firefox, Microsoft Internet Explorer and the Brave browser.
+
+The Newebify Blockchain offers the following features and functionalities:
+\begin{enumerate}
+	\item It is an independent application with all data securely stored on the blockchain through an Ethereum smart contract, with Metamask integration enabling seamless interaction with the stored information.
+	\item  This project utilize the Goerli testnet, a specialized Ethereum test network, to thoroughly evaluate and refine the platform's functionality, this ensures a robust and secure user experience upon full implementation.
+	\item This platform incorporates a function allowing users to type and transmit messages, this user-generated content remains securely and transparently stored.
+	\item Supports creation of user-generated content as a guarantee of resilient and reliable framework for secure data management on the blockchain driven by languages such as Solidity and JavaScript.
+\end{enumerate}
+
+\subsection{Applications}
+\begin{enumerate}
+\item Simulate messages on the fly.
+\item Users can leave messages securely stored on the blockchain, creating a digital legacy.
+\item Facilitates easy testing and debugging
+\item Supports inline editing and documentation.
+\item Loved by users and friendly with developers, comes as a standalone web application, which is easy to integrate, customise and extend.
+\item Supports attachments including files and images.
+\end{enumerate}
+\newpage
+
+\section{System Requirements}
+\subsection{Hardware Requirements}
+Minimum System Requirements:
+\begin{enumerate}
+\item Processor: Intel Pentium 2.6 GHz 
+\item Memory: 512 MB DDR2 @800 MHz
+\item Display: Monitor with screen resolution of 1024 x 768
+\item Graphics: Intel HD 4000 series (with Open GL support)
+\end{enumerate}
+Recommended System Requirements:
+\begin{enumerate}
+\item Processor: Intel Core i3 Quad Core 2.8 GHz 
+\item Memory: 1 GB DDR3 @1333 MHz
+\item Display: Monitor with screen resolution of 1440 x 900
+\item Graphics: Intel IRIS series (with Open GL ES 2.0 support)
+\end{enumerate}
+
+\subsection{Software Requirements}
+\begin{enumerate}
+\item OS: Windows 7 or later / Mac OSX 10.6 Snow Leopard or later / Ubuntu 14.04 or later
+\item Web browser with Adobe Flash support.\cite{adobe} 
+\end{enumerate}
+
+\subsection{Functional Requirements}
+\subsubsection{External Interface Requirements}
+\begin{enumerate}
+\item Front-End (GUI) : An elegant and intuitive is graphical user interface is provided to the user for sending messages. It is also designed to help beginners to hone their skills in the field of blockchain.
+\item Communication Interfaces HTTP: Hyper Text Transfer Protocol is a method used to transfer or convey information on the World Wide Web. Its original purpose was to provide the way to publish and retrieve HTML pages.
+An HTTP client initiates a request by establishing Transmission Control Protocol (TCP) connection to a particular port on a remote host. An HTTP server listening on that port waits for the client to send a request message. Upon receiving request, the server sends back a sta- tus line, such as HTTP/1.1 200 OK and a message of its own, the body of which is perhaps the request file, an error message, or some other information. Resources to be accessed by HTTP are identified using Uniform Resource Identifiers (URIs) (or, more specifically, URLs). Us- ing the HTTP: or HTTPS URI schemes.
+
+\end{enumerate}
+
+\subsection{Non Functional Requirements}
+\subsubsection{Performance Requirements}
+The web server that hosts the Newebify Blockchain must be able to handle and support multiple instances of application. The time delay between request and acknowledgement  should be very small in case of online help required. Minimum time should be taken by the application to display the preview of the messages developed by the user. In case of power failure, the data should be stored in the state that was last saved by the user.
+
+\newpage
+
+\section{Tools and Technologies Used}
+
+Newebify Blockchain makes use of the following tools:
+\begin{enumerate}
+\item Solidity:\\Solidity plays a crucial role in defining the functionality and logic of smart contracts that run on the Ethereum blockchain.\\
+Solidity is essential for writing the smart contracts that power the core functionality of the DApp. These contracts define rules, automate actions, and manage the interactions within the application.
+\item CSS:\\CSS plays a crucial role in enhancing the visual appeal and user experience of React applications.
+Additionally, CSS facilitates responsive design, ensuring seamless adaptation to various screen sizes and devices.\cite{css}
+\item JavaScript: \\ JavaScript also facilitates seamless communication between the front-end interface and the blockchain, allowing for actions like sending transactions and retrieving data.
+JavaScript framework like ethers.js provide essential tools for interacting with smart contracts.\cite{javascript}
+\item React:\\React's state management and lifecycle methods enable seamless handling of complex user interactions and dynamic data updates, enhancing the user experience.
+React's virtual DOM and one-way data binding streamline the development process.\cite{bootstrap}
+\end{enumerate}
+\newpage
+
+\section{System Design}
+Blockchain is a distributed ledger technology that provides a secure and transparent way to record transactions across a network of computers. It operates on a decentralized architecture, where data is stored in blocks that are linked together in a chronological order. With its immutable and tamper-resistant nature, blockchain finds applications in various industries, from finance to supply chain management, offering a reliable foundation for building secure and transparent systems.
+
+Advantages over conventional systems:
+\begin{enumerate}
+\item Unlike traditional centralized systems, blockchain operates on a decentralized network of nodes.
+\item Transactions on a blockchain are recorded in a tamper-proof and transparent manner. Once added to the chain, it becomes extremely difficult to alter or delete data, enhancing security and trust.
+\item The data stored on a blockchain is immutable, meaning that once recorded, it cannot be changed.
+\item The transparent and auditable nature of blockchain builds trust among participants.
+\end{enumerate}
+
+\subsection{Data}
+File and Data formats\\
+The input data will be in the form of textual information.
+User can save the file on the cloud for future reference.
+
+\subsection{Code}
+The most radical core functions of the Newebify Blockchain are as follows:
+\begin{enumerate}
+\item The getAllWaves() Function:\\
+\\
+\textbf{\ let allWaves = await waveContract.getAllWaves();}}\\
+ \\This line of JavaScript code is used to retrieve data from a smart contract deployed on the Ethereum blockchain.
+It retrieves data, likely a list of interactions or waves, and assigns it to the variable allWaves for further use in the application.
+
+\end{enumerate}
+\newpage
+\section{System Implementation}
+
+The Newebify Blockchain is implemented with the assistance of Ethereum's decentralized ledger technology and supported by the deployment of an Ethereum smart contract. This contract serves as the backbone of the platform, enabling secure data storage and interaction with the blockchain.\\
+
+The decentralized nature of the blockchain means that no single entity has control over the data, enhancing security and eliminating the risk of central points of failure.
+\begin{figure}[H]
+\centering
+\includegraphics[height=4in]{/Users/waibhav/Desktop/scr}
+\end{figure}
+
+\subsection{Screenshots of output}
+\begin{figure}[H]
+\centering
+\includegraphics[height=4in]{Output.png}
+\caption{Hompage}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=3.5in]{Metamask.png}
+\caption{Metamask}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=3in]{Message.png}
+\caption{Message}
+\end{figure}
+
+\newpage
+\section{System Testing and Result Analysis}
+In order to overcome the drawbacks the need to be able to offer clients the opportunity to send messages. This project?s goal is provide a basic interface to send messages.\\
+
+The testing is divided into two sub stages:
+\begin{enumerate}
+\item Unit and integration level adherence to coding standards and successful communication between units.
+\item The items to be tested includes, images, tables, horizontal lines, radio button, checkbox, text field, label, hyperlinks.
+\end{enumerate}
+
+\subsection{Features to be tested}
+Testing is performed manually and the browser will be brought down while
+the testing is carried out.
+The entrance criteria?s for each phase of testing must be met before the next phase can commence.
+\begin{enumerate}
+\item Accessibility
+\item Coding Standards
+\item Compatibility
+\item Functional
+\item Validation of Forms
+\item Connectivity
+\item Scalability
+\item Security
+\item Usability
+\end{enumerate}
+
+\subsection{Test Deliverables}
+The following documents will be generated as a result of these testing activities:
+\begin{enumerate}
+\item Master test plan (MTP - this document)
+\item Test input and output data (Test cases).
+\end{enumerate}
+
+\subsection{Coding Standards}
+Each of the units of code that make up the module being tested (typically a single fully functional Web page) must be coded to all of the following coding standards, any deviations from the standard must be documented and approved.\\
+The code must pass the following syntax and design requirements:
+\begin{enumerate}
+\item Each unit of code has been inherited or copied from the most appropriate object class or Template.
+\item All data entry fields are checked for invalid data and an appropriate error message is displayed if the data is found to be invalid.
+\item Using the browsers Tab key allows the client to tab through the input fields on the Form in a top to bottom, left to right order.
+\item All validations are performed (and error messages displayed) in a top- down, left-to-right Fashion.
+\item Using equivalence partitioning techniques, all data entry fields will be checked to ensure that they are able to accept valid values and that their error checking routines can handle invalid data appropriately.
+\end{enumerate}
+\newpage
+\section{Conclusion and Future Work}
+An attempt is made to this innovative implementation ensuring a transparent, immutable, and decentralized approach to managing interactions and messages. It leverages the inherent strengths of blockchain technology, offering a secure and trustworthy environment for users to engage in meaningful exchanges.\\
+
+In future work, this project can be extended to enhancing user experience and expanding functionalities. Potential avenues for exploration may include optimizing smart contract logic, exploring additional blockchain integrations.\\
+
+The purpose and objective of this project is achieved. By providing extremely rich graphical user interface, sending messages is easy and in an aesthetic form. Thus, even a novice user can dream and accomplish their wish of sending the messages.\\
+
+Additionally, ongoing efforts to enhance scalability and explore potential partnerships within the blockchain ecosystem will contribute to the continued growth and success of the Newebify Blockchain platform.
+\newpage
+\begin{thebibliography}{1}
+
+  \bibitem{adobe} Adobe Flash Player, http://www.adobe.com/products/flashplayer.html
+  \bibitem{react}  React Tutorials, https://react.dev/
+  \bibitem{cloud} Google Cloud JavaScript Libraries, https://cloud.google.com/compute/docs/tutorials/javascript-guide
+  \bibitem{css} Tutorial Points CSS, https://www.tutorialspoint.com/css/
+  \bibitem{javascript} JavaScript, https://www.javascript.com/
+
+ \bibitem{Solidity} Solidity, https://soliditylang.org/
+
+
+
+  \end{thebibliography}
+
+\end{document}
